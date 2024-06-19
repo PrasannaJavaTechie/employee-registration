@@ -11,19 +11,19 @@ export class UserRegistrationService {
   constructor(private http: HttpClient) { }
 
   public doRegistration(user: User){
-    return this.http.post("http://localhost:8080/registerapi/register",user,{responseType:"text"});
+    return this.http.post("http://localhost:9090/registerapi/register",user,{responseType:"text"});
   }
 
   public getUsers(){
-    return this.http.get("http://localhost:8080/registerapi/getAllUsers");
+    return this.http.get("http://localhost:9090/registerapi/getAllUsers");
   }
 
   public getUserByEmail(email: string){
-    return this.http.get("http://localhost:8080/registerapi/findUser/"+email);
+    return this.http.get("http://localhost:9090/registerapi/findUser/"+email);
   }
 
   public deleteUser(id:any){
-    return this.http.delete("http://localhost:8080/registerapi/cancel/"+id);
+    return this.http.delete("http://localhost:9090/registerapi/cancel/"+id);
   }
 
 }

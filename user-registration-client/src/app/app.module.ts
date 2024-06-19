@@ -18,7 +18,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
   ],
   providers: [
-    provideClientHydration(),
     provideHttpClient(withFetch()),
   ],
   bootstrap:[]
