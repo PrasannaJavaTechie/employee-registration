@@ -56,5 +56,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>angular-springboot-docker</finalName>
 	</build>
 </project>
